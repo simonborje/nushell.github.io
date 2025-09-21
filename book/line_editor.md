@@ -611,10 +611,11 @@ $env.config.menus ++= [{
     only_buffer_difference: false # Search is done on the text written after activating the menu
     marker: "| "                  # Indicator that appears with the menu is active
     type: {
-        layout: columnar          # Type of menu
-        columns: 4                # Number of columns where the options are displayed
-        col_width: 20             # Optional value. If missing all the screen width is used to calculate column width
-        col_padding: 2            # Padding between columns
+        layout: columnar              # Type of menu
+        columns: 4                    # Number of columns where the options are displayed
+        col_width: 20                 # Optional value. If missing all the screen width is used to calculate column width
+        col_padding: 2                # Padding between columns
+        tab_traversal: "horizontal"   # Direction in which pressing <Tab> will cycle through options, "horizontal" or "vertical"
     }
     style: {
         text: green                   # Text style
